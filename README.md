@@ -4,13 +4,13 @@ The program runs on the commandline like this:
 python route.py [start-city] [end-city] [routing-option] [routing-algorithm]
 
 where:
- start-city and end-city are the cities we need a route between.
- routing-option is one of:
+1) start-city and end-city are the cities we need a route between.
+2) routing-option is one of:
   -"segments" finds a route with the fewest number of \turns" (i.e. edges of the graph)
   -"distance" finds a route with the shortest total distance
   -"time" finds the fastest route, for a car that always travels at the speed limit
   -"scenic" finds the route having the least possible distance spent on highways (which we define as roads with speed limits 55 mph or         greater)
- routing-algorithm is one of:
+3) routing-algorithm is one of:
   -"bfs" uses breadth-first search
   -"dfs" uses depth-firrst search
   -"ids" uses iterative deepening search
